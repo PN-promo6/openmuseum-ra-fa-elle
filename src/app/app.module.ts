@@ -9,9 +9,11 @@ import { MuseumListService } from './services/museumList.service';
 import { MuseumListComponent } from './museum-list/museum-list.component';
 // Un musée dans la liste
 import { SingleMuseumComponent } from './single-museum/single-museum.component';
+import { MuseumDetailComponent } from './museum-detail/museum-detail.component';
 
-const appRoutes:Routes = [
-  {path: '', component: MuseumListComponent}
+const appRoutes: Routes = [
+  { path: '', component: MuseumListComponent },
+  { path: 'museum/:ref_musee', component: MuseumDetailComponent }
 ]
 
 @NgModule({
@@ -19,6 +21,7 @@ const appRoutes:Routes = [
     AppComponent,
     SingleMuseumComponent,
     MuseumListComponent,
+    MuseumDetailComponent,
   ],
   imports: [
     BrowserModule,
