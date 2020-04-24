@@ -10,6 +10,7 @@ import { MuseumListComponent } from './museum-list/museum-list.component';
 // Un musée dans la liste
 import { SingleMuseumComponent } from './single-museum/single-museum.component';
 import { MuseumDetailComponent } from './museum-detail/museum-detail.component';
+import { MapComponent } from './map/map.component';
 
 const appRoutes: Routes = [
   { path: '', component: MuseumListComponent },
@@ -22,6 +23,7 @@ const appRoutes: Routes = [
     SingleMuseumComponent,
     MuseumListComponent,
     MuseumDetailComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule,

@@ -19,6 +19,7 @@ export class MuseumDetailComponent implements OnInit {
   museumFax: string;
   museumWebSite: string;
   museumOpening: string;
+  museumCoord: number;
 
   constructor(private museumListService: MuseumListService, private route: ActivatedRoute) { }
 
@@ -32,7 +33,7 @@ export class MuseumDetailComponent implements OnInit {
     this.museumFax = this.museumListService.getMuseumByRefMusee(museumRef).fax;
     this.museumWebSite = this.museumListService.getMuseumByRefMusee(museumRef).sitweb;
     this.museumOpening = this.museumListService.getMuseumByRefMusee(museumRef).periode_ouverture;
-
+    this.museumCoord = this.museumListService.getMuseumByRefMusee(museumRef).coordonnees_finales;
   }
 
 }
